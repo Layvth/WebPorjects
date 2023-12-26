@@ -6,6 +6,8 @@
 * {
     padding: 0; margin : 0;
     scroll-behavior: smooth;
+    transition: 0.2s ease;
+
 }
 html {
     font-family: var(--poppins-font);
@@ -14,6 +16,21 @@ a {
     text-decoration:none;
 
 }
+.pubnav {
+    
+    background-color: var(--main-color);
+    padding: 3px 9px;
+    display: none;
+    justify-content: center;
+    justify-content: space-between;
+}
+.pubnav p {
+    color: white;
+}
+.pubnav a {
+    color: white;
+    text-decoration: underline;
+}
 .navbar {
     display: flex;
     flex-direction: row;
@@ -21,7 +38,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    box-shadow: 0 0 15px rgb(1 1 1/11%);
 }
 .navbar .logo p {
     font-size: 28px;
@@ -30,6 +46,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;    
+
 }
 
 
@@ -40,10 +57,61 @@ a {
     flex-direction: row;
     color: black;
 }
+.navbar .navitem a.active {
+    padding-right: 25px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    color: var(--main-color);
+
+}
+.navbar .navitem a:hover {
+    color: var(--main-color);
+}
 .navbar .navitem .contact {
     padding: 9px 13px;
     background-color: var(--main-color);
     color: white;
     border-radius: 5px;
+    border: 1px solid var(--main-color);
+}
+.navbar .navitem .contact:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+
 }
 
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+}
+.home .titles {
+    width: 700px;
+    text-align: center;
+    margin: auto;    
+    padding-top: 100px;
+}
+.home .titles .title1 {
+    color: var(--main-color);
+    font-size: 40px;
+    margin-top: 5px;
+}
+.home .titles .parg {
+    margin-bottom:20px;
+    word-spacing: 2px;
+}
+
+.home .titles .btns a {
+    padding: 10px 20px;
+}
+.home .titles .btns .contact {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+.home .titles .btns .tel {
+    background-color: var(--main-color);
+    border: 2px sozlid var(--main-color);
+    color: white;    
+}
